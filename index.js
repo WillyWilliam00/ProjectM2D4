@@ -52,9 +52,14 @@ const prices = [34, 50, 20, 10]
 const shippingCost = 50
 let utenteCheEffettuaLAcquisto = marco //cambia il valore qui per provare se il tuo algoritmo funziona!
 
+// creo un ciclo for per sommare i prezzi
+
 for (let i2 = 0; i2 < prices.length; i2++ ) {
   carrello += prices[i2]
 }
+
+// nel primo IF verifico se ambassador = true -> sconto del 30%
+// nel secondo IF se "carrello" > 100 spedizione gratuita, altrimenti aggiungo const shippingCost
 
 if (utenteCheEffettuaLAcquisto.isAmbassador) {
  carrello = carrello - (carrello*0.3)
@@ -67,7 +72,7 @@ if (carrello > 100) {
   console.log("il totale è:", carrello) 
 }
 
-
+// creo un array con tutti gli utenti
 
 const utenti = []
 
@@ -75,6 +80,9 @@ utenti.push(marco,paul,amy,sara,Andrea)
 
 
 console.log(utenti)
+
+// creo un ciclo for dove se isAmbassador = true mostra "è un ambassador" altrimenti mostra "non è un ambassador" x
+// ciascun utente dell'array 
 
 for (let i = 0; i < utenti.length; i++ ) {
   if (utenti[i].isAmbassador) {
@@ -84,6 +92,8 @@ for (let i = 0; i < utenti.length; i++ ) {
     console.log(utenti[i].name, utenti[i].lastName, "non un ambassador")
   }
 }
+
+// creo un array tramite ciclo for in cui se isAmbassador = true tramite .push l'utente viene caricato nell'array
 
 const utentiambassador = []
 
