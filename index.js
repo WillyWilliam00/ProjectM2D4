@@ -93,7 +93,7 @@ for (let i = 0; i < utenti.length; i++ ) {
   }
 }
 
-// creo un array tramite ciclo for in cui se isAmbassador = true tramite .push l'utente viene caricato nell'array
+// creo un array tramite ciclo for in cui se isAmbassador = true l'utente viene caricato nell'array tramite utentiambassador.push(utenti[y])
 
 const utentiambassador = []
 
