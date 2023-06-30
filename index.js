@@ -50,7 +50,7 @@ const Andrea = {
 let carrello = 0
 const prices = [34, 50, 20, 10]
 const shippingCost = 50
-let utenteCheEffettuaLAcquisto = marco //cambia il valore qui per provare se il tuo algoritmo funziona!
+let utenteCheEffettuaLAcquisto = amy //cambia il valore qui per provare se il tuo algoritmo funziona!
 
 // creo un ciclo for per sommare i prezzi
 
@@ -63,13 +63,13 @@ for (let i2 = 0; i2 < prices.length; i2++ ) {
 
 if (utenteCheEffettuaLAcquisto.isAmbassador) {
  carrello -= (carrello*0.3)
- console.log("complimenti! hai il 30 % di sconto!")
+ console.log("complimenti", utenteCheEffettuaLAcquisto.name, "hai il 30 % di sconto!")
 }
 if (carrello > 100) {
-  console.log("Hai la spedizione gratuita! il totale è:", carrello)
+  console.log(utenteCheEffettuaLAcquisto.name, "hai la spedizione gratuita! il totale è:", carrello)
 } else {
   carrello += shippingCost 
-  console.log("il totale è:", carrello) 
+  console.log(utenteCheEffettuaLAcquisto.name, "il totale è:", carrello) 
 }
 
 // creo un array con tutti gli utenti
