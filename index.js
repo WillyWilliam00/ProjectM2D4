@@ -15,20 +15,6 @@ Crea un array di utenti (usando .push) e stampa, per ogni utente (quindi con un 
 ES. L'utente Marco Rossi e' un ambassador, quindi la frase dovrebbe essere "Marco Rossi e' un ambassador"
 Infine, crea un SECONDO array in cui inserirai SOLO gli ambassador.
 */
-let carrello = 200
-let isAmbassador = true 
-const shippingCost = 50
-
-if (isAmbassador) {
- carrello = carrello - (carrello*0.3)
- console.log("complimenti! hai il 30 % di sconto!")
-}
-if (carrello > 100) {
-  console.log("Hai la spedizione gratuita! il totale è:", carrello)
-} else {
-  carrello += shippingCost 
-  console.log("il totale è:", carrello) 
-}
 
 const marco = {
   name: "Marco",
@@ -47,6 +33,29 @@ const amy = {
   lastName: "Reed",
   isAmbassador: false,
 }
+
+
+let carrello = 0
+const prices = [34, 50, 20]
+const shippingCost = 50
+let utenteCheEffettuaLAcquisto = marco //cambia il valore qui per provare se il tuo algoritmo funziona!
+
+for (let i2 = 0; i2 < prices.length; i2++ ) {
+  carrello += prices[i2]
+}
+
+if (utenteCheEffettuaLAcquisto.isAmbassador) {
+ carrello = carrello - (carrello*0.3)
+ console.log("complimenti! hai il 30 % di sconto!")
+}
+if (carrello > 100) {
+  console.log("Hai la spedizione gratuita! il totale è:", carrello)
+} else {
+  carrello += shippingCost 
+  console.log("il totale è:", carrello) 
+}
+
+
 
 const utenti = []
 
@@ -71,5 +80,5 @@ utenti1.push(marco)
 
 console.log(utenti1)
 
-const prices = [34, 5, 2]
-let utenteCheEffettuaLAcquisto = amy //cambia il valore qui per provare se il tuo algoritmo funziona!
+
+
