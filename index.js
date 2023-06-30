@@ -34,9 +34,21 @@ const amy = {
   isAmbassador: false,
 }
 
+const sara = {
+  name: "Sara",
+  lastName: "Bianchi",
+  isAmbassador: true,
+}
+
+const Andrea = {
+  name: "Andrea",
+  lastName: "Rossi",
+  isAmbassador: true,
+}
+
 
 let carrello = 0
-const prices = [34, 50, 20]
+const prices = [34, 50, 20, 10]
 const shippingCost = 50
 let utenteCheEffettuaLAcquisto = marco //cambia il valore qui per provare se il tuo algoritmo funziona!
 
@@ -59,18 +71,17 @@ if (carrello > 100) {
 
 const utenti = []
 
-utenti.push(marco)
-utenti.push(paul)
-utenti.push(amy)
+utenti.push(marco,paul,amy,sara,Andrea)
+
 
 console.log(utenti)
 
 for (let i = 0; i < utenti.length; i++ ) {
   if (utenti[i].isAmbassador) {
-    console.log(utenti[i].name, "è un ambassador")
+    console.log(utenti[i].name, utenti[i].lastName, "è un ambassador")
 
   } else {
-    console.log(utenti[i].name, "non un ambassador")
+    console.log(utenti[i].name, utenti[i].lastName, "non un ambassador")
   }
 }
 
