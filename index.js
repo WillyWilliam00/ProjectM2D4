@@ -62,7 +62,7 @@ for (let i2 = 0; i2 < prices.length; i2++ ) {
 // nel secondo IF se "carrello" > 100 spedizione gratuita, altrimenti aggiungo const shippingCost
 
 if (utenteCheEffettuaLAcquisto.isAmbassador) {
- carrello = carrello - (carrello*0.3)
+ carrello -= (carrello*0.3)
  console.log("complimenti! hai il 30 % di sconto!")
 }
 if (carrello > 100) {
