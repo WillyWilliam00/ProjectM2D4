@@ -66,7 +66,7 @@ utenti.push(amy)
 console.log(utenti)
 
 for (let i = 0; i < utenti.length; i++ ) {
-  if (utenti[i].isAmbassador===true) {
+  if (utenti[i].isAmbassador) {
     console.log(utenti[i].name, "è un ambassador")
 
   } else {
@@ -74,11 +74,15 @@ for (let i = 0; i < utenti.length; i++ ) {
   }
 }
 
-const utenti1 = []
+const utentiambassador = []
 
-utenti1.push(marco)
+for (let y = 0; y < utenti.length; y++) {
 
-console.log(utenti1)
+  if (utenti[y].isAmbassador) {
+    utentiambassador.push(utenti[y])
+  }
+}
 
+console.log(utentiambassador)
 
 
